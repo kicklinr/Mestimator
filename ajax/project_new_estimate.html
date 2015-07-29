@@ -12,8 +12,7 @@
 	<div class="col-xs-12 col-sm-6">
 		<div class="box">
 			<div class="box-header">
-				<div class="box-name">
-					<i class="fa fa-bar-chart-o"></i>
+				<div class="box-name">					
 					<span>Select type of Estimate</span>
 				</div>
 				<div class="box-icons">
@@ -28,34 +27,77 @@
 			</div>
 			
 			<div class="box-content">
+			    <li>New Hardware</li>
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>			
+			    <li>Architecture</li>				
 				<div class="row form-group">
 					<div class="col-sm-12">
 						<select id="el2">
-							<option>Build Server</option>
-							<option>Rebase</option>
-
+							<option>IPC/Tomcat</option>
+							<option>AIX/Weblogic</option>
 						</select>
 					</div>
-				</div>		
-						<div class="toggle-switch">
-							<label>
-								<input type="checkbox">
-								<div class="toggle-switch-inner"></div>
-								<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
-							</label>
-					</div>				
+				</div>
+				<ul>
+			    <li>Environment</li>				
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el3">
+							<option>Simple - 4 or less</option>
+							<option>Complex - 5+ (ex:SIT)</option>
+						</select>
+					</div>
+				</div>
+				</ul>
+										
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>				
 			</div>
 		</div>
 	</div>
 </div>
+
+<style>
+    #outer {
+        margin-left: 0; /**/
+        width: 100%;
+    }
+
+    #inner {
+        /*move the whole container 50px to the left side*/
+        margin-left:-50px; 
+        margin-right:0;
+        /*or move the whole container 50px to the right side*/
+        /*
+        margin-left:50px; 
+        margin-right:-50px;
+        */
+    }
+</style>
+
 <script type="text/javascript">
 // Run Select2 on element
 function Select2Test(){
 	$("#el2").select2();
+	$("#el3").select2();
+	$("#el4").select2();
 }
 $(document).ready(function() {
 	// Load script of Select2 and run this
 	LoadSelect2Script(Select2Test);
 	WinMove();
 });
+
+
 </script>
