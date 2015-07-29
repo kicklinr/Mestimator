@@ -27,7 +27,48 @@
 			</div>
 			
 			<div class="box-content">
-			    <li>New Hardware</li>
+			    <DL>
+				<DT>New Hardware</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>
+				<DT>Architecture</DT>	
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el2">
+							<option>Select Option...</option>
+							<option>IPC/Tomcat</option>
+							<option>AIX/Weblogic</option>
+						</select>
+					</div>
+				</div>				
+				<ul>
+				<DD>Environment
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el3">
+							<option>Select Option...</option>						
+							<option>Simple - 4 or less</option>
+							<option>Complex - 5+ (ex:SIT)</option>
+						</select>
+					</div>
+				</div>
+				</DD>
+				</ul>						
+	
+				<DT>Tuxedo</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>		
+				<DT>Database</DT>				
 				<div class="toggle-switch">
 					<label>
 						<input type="checkbox">
@@ -35,34 +76,83 @@
 						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
 					</label>
 				</div>			
-			    <li>Architecture</li>				
-				<div class="row form-group">
-					<div class="col-sm-12">
-						<select id="el2">
-							<option>IPC/Tomcat</option>
-							<option>AIX/Weblogic</option>
-						</select>
-					</div>
-				</div>
 				<ul>
-			    <li>Environment</li>				
+				<DD>DB Location
 				<div class="row form-group">
 					<div class="col-sm-12">
-						<select id="el3">
-							<option>Simple - 4 or less</option>
-							<option>Complex - 5+ (ex:SIT)</option>
+						<select id="el4">
+							<option>Select Option...</option>						
+							<option>ETC</option>
+							<option>PTC</option>
 						</select>
 					</div>
 				</div>
+				</DD>
 				</ul>
-										
+				<DT>Documentation</DT>				
 				<div class="toggle-switch">
 					<label>
 						<input type="checkbox">
 						<div class="toggle-switch-inner"></div>
 						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
 					</label>
-				</div>				
+				</div>	
+				<DT>Source Control</DT>	
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el5">
+							<option>Select Option...</option>
+							<option>Clearcase</option>
+							<option>GIT/Stash</option>
+						</select>
+					</div>
+				</div>
+				<DT>Network</DT>	
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el6">
+							<option>Select Option...</option>
+							<option>Single Site</option>
+							<option>Dual Site</option>
+						</select>
+					</div>
+				</div>
+				<DT>Batch</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>
+				<DT>Clients</DT>	
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el7">
+							<option>Select Option...</option>
+							<option>Internal</option>
+							<option>External</option>
+							<option>Service Based</option>
+						</select>
+					</div>
+				</div>
+				<DT>RSI/Webservice</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>
+				<DT>Tivoli/Netcool</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>
+				</DL>
 			</div>
 		</div>
 	</div>
@@ -92,6 +182,9 @@ function Select2Test(){
 	$("#el2").select2();
 	$("#el3").select2();
 	$("#el4").select2();
+	$("#el5").select2();
+	$("#el6").select2();
+	$("#el7").select2();
 }
 $(document).ready(function() {
 	// Load script of Select2 and run this
