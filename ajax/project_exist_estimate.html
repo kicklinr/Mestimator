@@ -28,22 +28,68 @@
 			</div>
 			
 			<div class="box-content">
+				<DL>
+				<DT>Transition Source Control</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>
+				<DT>New Environment</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>			
+				<ul>
+				<DD>Architecture
 				<div class="row form-group">
 					<div class="col-sm-12">
 						<select id="el2">
-							<option>Build Server</option>
-							<option>Rebase</option>
-
+							<option>Select Option...</option>						
+							<option>AIX</option>
+							<option>sIPC</option>
+							<option>sEOA</option>
 						</select>
 					</div>
-				</div>		
-						<div class="toggle-switch">
-							<label>
-								<input type="checkbox">
-								<div class="toggle-switch-inner"></div>
-								<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
-							</label>
-					</div>				
+				</div>
+				</DD>
+				</ul>
+				<ul>
+				<div class="row show-grid-forms">
+					<div class="col-sm-12">
+						<input type="text" class="form-control" placeholder="Enter Number of Environments...">
+					</div>					
+				</div>
+				</DD>
+				</ul>
+				<DT>Property File Change</DT>				
+				<div class="toggle-switch">
+					<label>
+						<input type="checkbox">
+						<div class="toggle-switch-inner"></div>
+						<div class="toggle-switch-switch"><i class="fa fa-check"></i></div>
+					</label>
+				</div>			
+				<ul>
+				<DD>Architecture
+				<div class="row form-group">
+					<div class="col-sm-12">
+						<select id="el3">
+							<option>Select Option...</option>						
+							<option>Single Environment Update</option>
+							<option>Multiple Environment Update</option>
+							<option>New Property File</option>
+						</select>
+					</div>
+				</div>
+				</DD>
+				</ul>
+				</DL>
 			</div>
 		</div>
 	</div>
